@@ -1,0 +1,76 @@
+@import 'components/header';
+@import 'components/card';
+@import 'components/promo';
+@import 'components/form';
+@import 'components/button';
+@import 'components/footer';
+
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+}
+a {
+
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    text-decoration: none;
+}
+a:not([href]):not([tabindex]) {
+    color: #fff;
+    text-decoration: none;
+}
+a:not([href]):not([tabindex]):hover {
+    color: #fff;
+    text-decoration: none;
+}
+a:active, a:hover {
+
+    outline: 0;
+    text-decoration: none;
+}
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+:focus {
+    outline: 0;
+}
+label {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+button, input {
+    border: none;
+    font-size: 100%;
+    margin: 0;
+    outline: none;
+    line-height: normal;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family:"Gotham Pro", sans-serif;
+    background-color: $body-bg;
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+li, ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.container {
+    max-width: 1420px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+

@@ -1,0 +1,186 @@
+@import '../variables';
+@import '../mixins';
+
+$title: gray;
+%item-base{
+    position: absolute;
+    left: 20px;
+    font-weight: 700;
+    z-index: 3;
+    text-transform: uppercase;
+}
+.title {
+    display: block;
+    padding:0;
+    margin:0;
+    font-size: 30px;
+    line-height: 1.2;
+    @if $title == gray {color: #48494a;}
+    @else if $title == red {color: $red;}
+    font-family: $font-medium;
+    @include lg {
+        font-size: 20px;
+    }
+
+
+}
+.card {
+    height: 100%;
+    background-color:$white;
+    box-shadow: 0 5px 4.6px .4px rgba(23, 24, 25, .05);
+    transition: box-shadow .3s ease;
+    max-width: 330px;
+    cursor: pointer;
+    position: relative;
+    &:hover {
+        box-shadow: 4px 10px 14px 10px rgba(23, 24, 25, .1);
+    }
+    &__head {
+        position: relative;
+        height: max-content;
+        object-fit: cover;
+        overflow: hidden;
+        &:before {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            content: "";
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+        }
+    }
+    &__img {
+        height: 238px;
+        object-fit: cover;
+    }
+    &__img__img {
+        height: 100%;
+        width: 100%;
+    }
+    &__label {
+        font-size: 11px;
+        color: #3c3c3c;
+        padding: 5px 10px;
+        background-color: $yellow;
+        top: 12px;
+        @extend %item-base;
+        &:before {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 100%;
+            z-index: 2;
+            border-right: 8px solid rgba(0, 0, 0, 0);
+            border-top: 8px solid $yellow;
+            border-left: 0 solid rgba(0, 0, 0, 0);
+        }
+    }
+    &__name {
+        bottom: 125px;
+        font-size: 15px;
+        color: white;
+        z-index: 20;
+        line-height: 20px;
+        overflow: hidden;
+        max-width: 200px;
+        text-overflow: ellipsis;
+        @extend %item-base;
+        &:hover {
+            color: $yellow;
+        }
+    }
+
+
+    &__favorite {
+        display: block;
+        top: 5px;
+        right: 16px;
+        position: absolute;
+        z-index: 3;
+        width: 30px;
+        height: 28px;
+        background-color: rgba(0,0,0,.25);
+        border-radius: 5px;
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.5);
+            transition: box-shadow linear 0.3s;
+        }
+    }
+    &__heart {
+
+        fill: #fff;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        &:active {
+            fill: $red;
+        }
+    }
+    &__footer {
+        padding: 12px 20px 23px;
+        font-size: 14px;
+        font-weight: 200;
+        color: #48494a;
+    }
+    &__location {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    &__address {
+        font-size: 14px;
+        color: #48494a;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 1.429em;
+        height: 1.429em;
+    }
+    &__metro {
+        width: 24px;
+        position: absolute;
+        bottom: 73px;
+        right: 22px;
+        z-index: 13;
+        @include xs {
+
+            right: 9px;
+        }
+    }
+    &__text {
+        color: #80848d;
+        margin-left: 1px;
+        font-size: 12px;
+        strong {
+            font-family: $font-bold;
+        }
+    }
+    &__text, &__price {
+        margin-top: 8px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    &__price__text {
+        color: #161617;
+        font-size: 17px;
+        background-color: #fffbd7;
+        padding: 8px 16px 8px 6px;
+        strong {
+            margin-left: 5px;
+            font-family: $font-bold;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

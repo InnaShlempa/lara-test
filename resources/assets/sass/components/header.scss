@@ -1,0 +1,43 @@
+@import '../variables';
+@import '../mixins';
+
+.header {
+    background-color: $white;
+    padding: 26px 0;
+    width: 100%;
+}
+
+.nav-menu {
+    padding-top: 3px;
+
+    &__item {
+        display: inline-block;
+        @include sm {
+            margin-left: 8px;
+        }
+    }
+    &__link {
+        margin-left: 35px;
+        font-size: 14px;
+        color: #48494a;
+        text-transform: uppercase;
+        font-family: $font-bold;
+        transition: $transition300;
+        @include sm {
+            font-size: 12px;
+        }
+        &:hover{
+            color: #ffc600;
+            transition: $transition300;
+        }
+    }
+}
+.logo{
+    margin-left: 5px;
+    width: 100%;
+    height: 100%;
+    &__icon{
+        width: 36px;
+
+    }
+}
