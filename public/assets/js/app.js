@@ -49517,9 +49517,9 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\OSpanel\domains\lara--test\resources\assets\js\app.js */"./resources/assets/js/app.js");
-__webpack_require__(/*! C:\OSpanel\domains\lara--test\resources\assets\sass\app.scss */"./resources/assets/sass/app.scss");
-module.exports = __webpack_require__(/*! C:\OSpanel\domains\lara--test\resources\assets\sass\style.scss */"./resources/assets/sass/style.scss");
+__webpack_require__(/*! C:\OSpanel\domains\lara-test\resources\assets\js\app.js */"./resources/assets/js/app.js");
+__webpack_require__(/*! C:\OSpanel\domains\lara-test\resources\assets\sass\app.scss */"./resources/assets/sass/app.scss");
+module.exports = __webpack_require__(/*! C:\OSpanel\domains\lara-test\resources\assets\sass\style.scss */"./resources/assets/sass/style.scss");
 
 
 /***/ })

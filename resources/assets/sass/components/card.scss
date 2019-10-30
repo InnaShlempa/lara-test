@@ -9,6 +9,11 @@ $title: gray;
     z-index: 3;
     text-transform: uppercase;
 }
+%card{
+    margin-top: 8px;
+    display: inline-block;
+    vertical-align: middle;
+}
 .title {
     display: block;
     padding:0;
@@ -92,9 +97,10 @@ $title: gray;
         &:hover {
             color: $yellow;
         }
+        @include xl {
+            bottom: 125px;
+        }
     }
-
-
     &__favorite {
         display: block;
         top: 5px;
@@ -111,7 +117,6 @@ $title: gray;
         }
     }
     &__heart {
-
         fill: #fff;
         position: absolute;
         top: 5px;
@@ -142,25 +147,24 @@ $title: gray;
         width: 24px;
         position: absolute;
         bottom: 73px;
-        right: 22px;
+        right: 16px;
         z-index: 13;
         @include xs {
-
             right: 9px;
         }
+
     }
     &__text {
         color: #80848d;
         margin-left: 1px;
         font-size: 12px;
+        @extend %card;
         strong {
             font-family: $font-bold;
         }
     }
-    &__text, &__price {
-        margin-top: 8px;
-        display: inline-block;
-        vertical-align: middle;
+     &__price {
+         @extend %card;
     }
     &__price__text {
         color: #161617;

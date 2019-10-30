@@ -21,7 +21,7 @@ $data = [
                 'alt'=>'Акции'
             ],
             'title'  =>'Акции',
-            'data'  =>'22/12/2017',
+            'data'  =>'07/08/2019',
             'text'   =>'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. '
         ]
 

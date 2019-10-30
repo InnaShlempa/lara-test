@@ -1,15 +1,12 @@
 <div class="container ">
-
         <div class="row  justify-content-md-between justify-content-center align-items-center mt-4 ">
-
             <div class="col-auto ">
                 <div class="title ">Популярные компании</div>
             </div>
             <div class="col-auto  mt-sm-0">
-                <a class="button button_red ">Все компании</a>
+                <a class="button button--red ">Все компании</a>
             </div>
         </div>
-
 </div>
 <div class="container">
     <div class="row justify-content-xl-between  justify-content-center ">
@@ -38,21 +35,16 @@
                         @if( $card->price != '')
                             <div class="card__price__text">от<strong>{{$card->price}}</strong></div>
                         @else
-                            <div class="card__price__text"><strong>Неизвестно</strong></div>
+                            <div class="card__price__text"><strong>Цена не известна</strong></div>
                         @endif
                     </div>
-
-                            <div class="card__text">IT<strong> решения</strong></div>
-
-
-
+                        @if( $card->text != '')
+                            <div class="card__text">IT<strong>{{$card->text}}</strong></div>
+                        @else
+                        @endif
                 </div>
-                </a>
             </div>
-
         </div>
         @endforeach
-
 </div>
-
 </div>
