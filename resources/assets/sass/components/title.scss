@@ -1,0 +1,19 @@
+@import '../variables';
+@import '../mixins';
+
+$title: gray;
+.title {
+    display: block;
+    padding:0;
+    margin:0;
+    font-size: 30px;
+    line-height: 1.2;
+    @if $title == gray {color: #48494a;}
+    @else if $title == red {color: $red;}
+    font-family: $font-medium;
+    @include lg {
+        font-size: 20px;
+    }
+
+
+}

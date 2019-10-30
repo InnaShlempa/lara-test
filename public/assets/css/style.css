@@ -4,6 +4,16 @@
   width: 100%;
 }
 
+.logo {
+  margin-left: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+.logo__icon {
+  width: 36px;
+}
+
 .nav-menu {
   padding-top: 3px;
 }
@@ -40,30 +50,73 @@
   transition: 300ms all ease-in-out;
 }
 
-.logo {
-  margin-left: 5px;
+.button {
+  display: inline-block;
+  color: #fff;
+  padding: 9px 25px;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-transition: box-shadow 0.3s ease, -webkit-transform 0.1s ease;
+  transition: box-shadow 0.3s ease, -webkit-transform 0.1s ease;
+  transition: box-shadow 0.3s ease, transform 0.1s ease;
+  transition: box-shadow 0.3s ease, transform 0.1s ease, -webkit-transform 0.1s ease;
+}
+
+.button--red {
+  box-shadow: 0 6px 10px 0.5px rgba(250, 25, 25, 0.45);
+  background-color: #e43030;
+  border-radius: 5px;
+}
+
+.button--red:hover {
+  box-shadow: none;
+  color: #fff;
+}
+
+.button--red:active {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.button--submit {
+  font-family: "GothamProBold";
   width: 100%;
-  height: 100%;
-}
-
-.logo__icon {
-  width: 36px;
-}
-
-.card__name,
-.card__label {
-  position: absolute;
-  left: 20px;
-  font-weight: 700;
-  z-index: 3;
+  max-width: 270px;
+  height: 55px;
+  background-color: #ff0000;
   text-transform: uppercase;
 }
 
-.card__price,
-.card__text {
-  margin-top: 8px;
-  display: inline-block;
-  vertical-align: middle;
+@media (max-width: 1200px) {
+  .button--submit {
+    max-width: 425px;
+  }
+}
+
+.button--submit:hover {
+  border-color: #ea0303;
+  color: #fff;
+  text-decoration: none;
+  background-image: -webkit-gradient(linear, left top, right top, from(#e20d0d), to(red));
+  background-image: linear-gradient(to right, #e20d0d, red);
+  box-shadow: 0 6px 10px 0.5px rgba(250, 25, 25, 0.45);
+}
+
+.button--success {
+  background: #5cb85c;
+}
+
+.button--error {
+  background: #ff0000;
+}
+
+.button--warning {
+  background: #f6993f;
+}
+
+.button--info {
+  background: #9561e2;
 }
 
 .title {
@@ -80,6 +133,22 @@
   .title {
     font-size: 20px;
   }
+}
+
+.card__name,
+.card__label {
+  position: absolute;
+  left: 20px;
+  font-weight: 700;
+  z-index: 3;
+  text-transform: uppercase;
+}
+
+.card__price,
+.card__text {
+  margin-top: 8px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .card {
@@ -486,75 +555,6 @@
 
 .control__field:hover {
   border: 1px solid #aca5a5;
-}
-
-.button {
-  display: inline-block;
-  color: #fff;
-  padding: 9px 25px;
-  cursor: pointer;
-  text-align: center;
-  vertical-align: middle;
-  -webkit-transition: box-shadow 0.3s ease, -webkit-transform 0.1s ease;
-  transition: box-shadow 0.3s ease, -webkit-transform 0.1s ease;
-  transition: box-shadow 0.3s ease, transform 0.1s ease;
-  transition: box-shadow 0.3s ease, transform 0.1s ease, -webkit-transform 0.1s ease;
-}
-
-.button--red {
-  box-shadow: 0 6px 10px 0.5px rgba(250, 25, 25, 0.45);
-  background-color: #e43030;
-  border-radius: 5px;
-}
-
-.button--red:hover {
-  box-shadow: none;
-  color: #fff;
-}
-
-.button--red:active {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
-
-.button--submit {
-  font-family: "GothamProBold";
-  width: 100%;
-  max-width: 270px;
-  height: 55px;
-  background-color: #ff0000;
-  text-transform: uppercase;
-}
-
-@media (max-width: 1200px) {
-  .button--submit {
-    max-width: 425px;
-  }
-}
-
-.button--submit:hover {
-  border-color: #ea0303;
-  color: #fff;
-  text-decoration: none;
-  background-image: -webkit-gradient(linear, left top, right top, from(#e20d0d), to(red));
-  background-image: linear-gradient(to right, #e20d0d, red);
-  box-shadow: 0 6px 10px 0.5px rgba(250, 25, 25, 0.45);
-}
-
-.button--success {
-  background: #5cb85c;
-}
-
-.button--error {
-  background: #d9534f;
-}
-
-.button--warning {
-  background: #f0ad4e;
-}
-
-.button--info {
-  background: #9561e2;
 }
 
 .footer {
