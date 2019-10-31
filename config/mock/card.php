@@ -3,7 +3,7 @@
 <?php
 
 $data = [
-    'cards' => [
+
         [
             'id'     => 1,
             'url'    => '',
@@ -56,8 +56,6 @@ $data = [
             'label'  =>'Back-end',
             'text'=>'решения',
         ]
-    ],
-
 
 ];
 

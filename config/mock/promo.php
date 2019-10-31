@@ -1,7 +1,7 @@
 <?php
 
 $data = [
-    'promos' => [
+
         [
             'id'     => 1,
             'url'    => '',
@@ -24,9 +24,6 @@ $data = [
             'data'  =>'07/08/2019',
             'text'   =>'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. '
         ]
-
-
-    ],
 
 
 ];
