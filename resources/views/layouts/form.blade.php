@@ -1,3 +1,4 @@
+<div class="form form--subscription">
 <form action="#">
     <div class="form__head">
         <div class="form__title">Подпишитесь на рассылку</div>
@@ -13,3 +14,4 @@
         <button class="button button--submit" type="submit">Подписаться</button>
     </div>
 </form>
+</div>

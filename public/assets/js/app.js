@@ -49488,17 +49488,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/assets/sass/app.scss":
-/*!****************************************!*\
-  !*** ./resources/assets/sass/app.scss ***!
-  \****************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
 /***/ "./resources/assets/sass/style.scss":
 /*!******************************************!*\
   !*** ./resources/assets/sass/style.scss ***!
@@ -49511,14 +49500,13 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 0:
-/*!**************************************************************************************************************!*\
-  !*** multi ./resources/assets/js/app.js ./resources/assets/sass/app.scss ./resources/assets/sass/style.scss ***!
-  \**************************************************************************************************************/
+/*!*****************************************************************************!*\
+  !*** multi ./resources/assets/js/app.js ./resources/assets/sass/style.scss ***!
+  \*****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! C:\OSpanel\domains\lara-test\resources\assets\js\app.js */"./resources/assets/js/app.js");
-__webpack_require__(/*! C:\OSpanel\domains\lara-test\resources\assets\sass\app.scss */"./resources/assets/sass/app.scss");
 module.exports = __webpack_require__(/*! C:\OSpanel\domains\lara-test\resources\assets\sass\style.scss */"./resources/assets/sass/style.scss");
 
 

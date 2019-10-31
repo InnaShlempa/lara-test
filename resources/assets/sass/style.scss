@@ -1,17 +1,6 @@
-@import 'components/header';
-@import 'components/menu';
-@import 'components/button';
-@import 'components/title';
-@import 'components/card';
-@import 'components/promo';
-@import 'components/form';
-@import 'components/footer';
-
-
-
-
-
-
+@import 'variables';
+@import 'normalize';
+@import 'mixins';
 img {
     max-width: 100%;
     height: auto;
@@ -78,4 +67,17 @@ li, ul {
     padding: 0 20px;
 }
 
+@import 'components/header';
+@import 'components/menu';
+@import 'components/button';
+@import 'components/title';
+@import 'components/card';
+@import 'components/promo';
+@import 'components/form';
+@import 'components/footer';
+@import 'components/control';
+@import 'components/developers';
+@import 'components/logo';
+@import 'components/section_promo';
+@import 'components/socials';
 

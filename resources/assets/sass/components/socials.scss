@@ -1,0 +1,33 @@
+.socials {
+    max-width: 175px;
+    width: 100%;
+    margin: 0 15px 0;
+    @include sm {
+        margin: 0 auto;
+        justify-content: center;
+    }
+    &__title {
+        color: #80868e;
+        font-size: 14px;
+        font-family: $font-medium;
+        @include sm {
+            text-align: center;
+        }
+    }
+    &__list{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item svg{
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+    }
+    &__item{
+        &:hover path{
+            transition: $transition300;
+            fill: rgb(219,22,63);
+        }
+    }
+}
